@@ -1,0 +1,779 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Background3D from "../components/Background3D.astro";
+import Whatsapp from "../components/Whatsapp.astro";
+import {
+  Mail,
+  Code,
+  Server,
+  Cpu,
+  Terminal,
+  MapPin,
+  Github,
+  FileText,
+  School,
+  ExternalLink,
+  Instagram,
+  Smartphone,
+  Blocks,
+} from "lucide-astro";
+---
+
+<Layout title="Mario Gutierrez | Desarrollador & Ingeniero">
+  <Background3D />
+
+  <main class="container">
+    <!-- Header / Hero Section -->
+    <section class="hero-header fade-in-section">
+      <div class="glass-card header-card">
+        <img
+          src="/8E9A38AF-B518-4AE2-A7DF-E702AD5381A9.JPG"
+          alt="Mario Gutiérrez"
+          class="profile-img"
+        />
+        <div class="header-content">
+          <h1 class="name">Mario Gutiérrez</h1>
+          <h2 class="role">Desarrollador Full Stack</h2>
+          <div class="location">
+            <MapPin class="icon-sm" /> Medellín, Colombia
+          </div>
+
+          <div class="social-links">
+            <a
+              href="mailto:gmmalberto11@gmail.com"
+              class="social-btn"
+              title="Email"
+            >
+              <Mail />
+            </a>
+            <a
+              href="https://github.com/marioagutierrez"
+              target="_blank"
+              class="social-btn"
+              title="GitHub"
+            >
+              <Github />
+            </a>
+            <a
+              href="https://instagram.com/mario.gutim"
+              target="_blank"
+              class="social-btn"
+              title="Instagram"
+            >
+              <Instagram />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=573043509646&text="
+              target="_blank"
+              class="social-btn"
+              title="WhatsApp"
+            >
+              <Whatsapp />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="glass-card">
+        <p class="text-content">
+          Soy un programador inquieto con una pasión por fusionar el hardware y
+          el software. Originalmente <strong
+            >Estudiante de ingeneiria en Mecatrónica</strong
+          > de Valencia, Venezuela, ahora creo soluciones tecnológicas en Medellín.
+          <br /><br />
+          Mi enfoque único combina el bajo nivel (sistemas embebidos, C/C++) con el
+          desarrollo web moderno, permitiéndome construir sistemas completos y robustos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Experiencia</h2>
+      <div class="timeline">
+        <div class="glass-card timeline-item">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Desarrollador Full Stack / Freelance</h3>
+            <span class="timeline-date">2019 - Presente</span>
+          </div>
+          <p class="timeline-company">Independiente</p>
+          <p class="timeline-desc">
+            Desarrollo de aplicaciones web a medida y soluciones de IoT.
+            Integración de sistemas de hardware con interfaces web modernas.
+          </p>
+        </div>
+        <!-- Add more experience items here -->
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Formación</h2>
+      <div class="timeline">
+        <div class="glass-card timeline-item">
+          <div class="timeline-header">
+            <h3 class="timeline-role">Ingeniería en Mecatrónica</h3>
+            <span class="timeline-date">2019 - 2023</span>
+          </div>
+          <p class="timeline-company">
+            <School class="icon-sm" /> Valencia, Venezuela
+          </p>
+          <p class="timeline-desc">
+            Especialización en robótica, control de sistemas y electrónica.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="glass-card project-card">
+          <h3 class="project-title">Portfolio 3D Interactivo</h3>
+          <p class="project-desc">
+            Este sitio web. Construido con Astro y Three.js para una experiencia
+            inmersiva.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Astro</span>
+            <span class="tag">Three.js</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-sm"><Github size={16} /> Code</a>
+            <a href="#" class="link-sm"><ExternalLink size={16} /> Preview</a>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Ya Busco</h3>
+          <p class="project-desc">
+            Directorio comercial digital que conecta negocios locales en
+            Venezuela con sus clientes.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Web Platform</span>
+            <span class="tag">Business</span>
+            <span class="tag">Venezuela</span>
+          </div>
+          <div class="project-links">
+            <a href="https://yabusco.com/" target="_blank" class="link-sm"
+              ><ExternalLink size={16} /> Web</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Roraima AI SDK</h3>
+          <p class="project-desc">
+            SDK para integrar la primera IA venezolana, facilitando el uso de
+            modelos de IA y pagos en moneda local.
+          </p>
+          <div class="project-tags">
+            <span class="tag">NPM</span>
+            <span class="tag">AI</span>
+            <span class="tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/marioagutierrez/roraima"
+              target="_blank"
+              class="link-sm"><Github size={16} /> Code</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Venepagos Flutter SDK</h3>
+          <p class="project-desc">
+            Solución oficial para integrar pagos en Bolívares dentro de
+            aplicaciones móviles Flutter.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Flutter</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">Fintech</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/marioagutierrez/flutter-venepagos"
+              target="_blank"
+              class="link-sm"><Github size={16} /> Code</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Venepagos Web SDK</h3>
+          <p class="project-desc">
+            Librería NPM para la fácil integración de la pasarela de pagos
+            Venepagos en aplicaciones web.
+          </p>
+          <div class="project-tags">
+            <span class="tag">NPM</span>
+            <span class="tag">React/Web</span>
+            <span class="tag">Fintech</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/marioagutierrez/venepagos-sdk"
+              target="_blank"
+              class="link-sm"><Github size={16} /> Code</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Econecta Backend</h3>
+          <p class="project-desc">
+            Infraestructura de backend para servicios de onboarding y gestión de
+            usuarios en Econecta.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Backend</span>
+            <span class="tag">API</span>
+            <span class="tag">Services</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/marioagutierrez/econecta-backend"
+              target="_blank"
+              class="link-sm"><Github size={16} /> Code</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Integración Bancaria R4</h3>
+          <p class="project-desc">
+            Herramienta de testing para validar integraciones financieras con la
+            plataforma bancaria R4.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Scripting</span>
+            <span class="tag">Banking</span>
+            <span class="tag">Test</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/marioagutierrez/test-r4-bcv"
+              target="_blank"
+              class="link-sm"><Github size={16} /> Code</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Sistema de Control IoT</h3>
+          <p class="project-desc">
+            Plataforma para monitoreo de sensores en tiempo real usando
+            Raspberry Pi y Websockets.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">IoT</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-sm"><Github size={16} /> Code</a>
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">PressiCard</h3>
+          <p class="project-desc">
+            Plataforma de tarjetas de presentación digitales inteligentes en
+            Medellín. Comparte tu perfil profesional con un solo toque o QR.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">SaaS</span>
+            <span class="tag">Digital Card</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://www.pressicard.com/"
+              target="_blank"
+              class="link-sm"><ExternalLink size={16} /> Web</a
+            >
+          </div>
+        </div>
+
+        <div class="glass-card project-card">
+          <h3 class="project-title">Econecta</h3>
+          <p class="project-desc">
+            Solución pionera de tarjetas NFC en Venezuela. Plataforma para
+            gestión de perfiles digitales y networking corporativo.
+          </p>
+          <div class="project-tags">
+            <span class="tag">NFC</span>
+            <span class="tag">Venezuela</span>
+            <span class="tag">Networking</span>
+          </div>
+          <div class="project-links">
+            <a href="https://econecta.io/" target="_blank" class="link-sm"
+              ><ExternalLink size={16} /> Web</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section fade-in-section">
+      <h2 class="section-title">Tecnologías</h2>
+      <div class="skills-grid">
+        <div class="glass-card skill-card delay-100">
+          <div class="skill-header">
+            <Code class="skill-icon" />
+            <h3>Web Moderno</h3>
+          </div>
+          <div class="tags-container">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Astro</span>
+            <span class="tag">Three.js</span>
+            <span class="tag">Tailwind</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card delay-200">
+          <div class="skill-header">
+            <Server class="skill-icon" />
+            <h3>Backend & Sistemas</h3>
+          </div>
+          <div class="tags-container">
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card delay-300">
+          <div class="skill-header">
+            <Smartphone class="skill-icon" />
+            <h3>Desarrollo Móvil</h3>
+          </div>
+          <div class="tags-container">
+            <span class="tag">Expo</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Android</span>
+            <span class="tag">iOS</span>
+            <span class="tag">Nativo</span>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card delay-300">
+          <div class="skill-header">
+            <Cpu class="skill-icon" />
+            <h3>Hardware & IoT</h3>
+          </div>
+          <div class="tags-container">
+            <span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">Electrónica Integrada</span>
+          </div>
+        </div>
+        <div class="glass-card skill-card delay-400">
+          <div class="skill-header">
+            <Blocks class="skill-icon" />
+            <h3>Blockchain & Web3</h3>
+          </div>
+          <div class="tags-container">
+            <span class="tag">Solidity</span>
+            <span class="tag">Web3.js</span>
+            <span class="tag">Smart Contracts</span>
+            <span class="tag">Ethereum (ETH)</span>
+            <span class="tag">BSC</span>
+            <span class="tag">TRON (TRX)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem 0;
+    max-width: 700px; /* More confined "resume" feel */
+    margin: 0 auto;
+  }
+
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Header Styles */
+  .header-card {
+    text-align: left;
+    display: flex;
+    flex-direction: row; /* Layout horizontal */
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .header-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+  }
+
+  .name {
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(90deg, #fff, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .role {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .location {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .social-btn {
+    padding: 0.6rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #ddd;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+  }
+
+  /* Glassmorphism */
+  .glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition:
+      transform 0.1s ease-out,
+      box-shadow 0.3s ease; /* Faster transform for smooth tilt */
+
+    /* Initialize vars for tilt */
+    --tilt-x: 0px;
+    --tilt-y: 0px;
+    transform: translate(var(--tilt-x), var(--tilt-y));
+  }
+
+  .glass-card:hover {
+    transform: translate(var(--tilt-x), calc(var(--tilt-y) - 5px));
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.2);
+    border-color: var(--primary-color);
+  }
+
+  /* Text Content */
+  .text-content {
+    line-height: 1.7;
+    color: #ccc;
+  }
+
+  /* Timeline (Experience & Education) */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    padding: 1.5rem;
+    border-left: 2px solid var(--primary-color); /* Accent line */
+  }
+
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-role {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .timeline-date {
+    font-size: 0.9rem;
+    color: #888;
+    font-family: monospace;
+  }
+
+  .timeline-company {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+
+  .timeline-desc {
+    color: #bbb;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #fff;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1.2rem;
+    flex-grow: 1;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .link-sm {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+  .link-sm:hover {
+    opacity: 1;
+    color: var(--primary-color);
+  }
+
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+  }
+
+  .skill-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+    transform: translateY(-5px);
+  }
+
+  .skill-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-header h3 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .skill-icon {
+    color: var(--primary-color);
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .tag {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #ddd;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+  }
+
+  .tag:hover {
+    border-color: var(--primary-color);
+    background: rgba(0, 240, 255, 0.1);
+    color: #fff;
+  }
+
+  /* Utilities */
+  .icon-sm {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    main {
+      padding: 2rem 1rem;
+    }
+
+    .header-card {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header-content {
+      align-items: center;
+    }
+
+    .location {
+      justify-content: center;
+    }
+
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+  }
+</style>
+
+<script>
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  const sections = document.querySelectorAll(".fade-in-section");
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  // Mobile Parallax Effect for Cards
+  if (window.DeviceOrientationEvent) {
+    const cards = document.querySelectorAll(".glass-card");
+
+    window.addEventListener(
+      "deviceorientation",
+      (event) => {
+        // Check if we are on a mobile device
+        if (window.innerWidth > 768) return;
+
+        const tiltX = (event.gamma || 0) / 3;
+        const tiltY = ((event.beta || 0) - 45) / 3;
+
+        cards.forEach((card) => {
+          const htmlCard = card as HTMLElement;
+          htmlCard.style.setProperty("--tilt-x", `${tiltX}px`);
+          htmlCard.style.setProperty("--tilt-y", `${tiltY}px`);
+        });
+      },
+      true,
+    );
+  }
+</script>
+```
