@@ -29,7 +29,7 @@ import {
         <img
           src="/8E9A38AF-B518-4AE2-A7DF-E702AD5381A9.JPG"
           alt="Mario Gutiérrez"
-          class="profile-img"
+          class="profile-img animate-float"
         />
         <div class="header-content">
           <h1 class="name">Mario Gutiérrez</h1>
@@ -133,7 +133,7 @@ import {
     <section class="section fade-in-section">
       <h2 class="section-title">Proyectos</h2>
       <div class="projects-grid">
-        <div class="glass-card project-card">
+        <div class="glass-card project-card delay-100">
           <h3 class="project-title">Portfolio 3D Interactivo</h3>
           <p class="project-desc">
             Este sitio web. Construido con Astro y Three.js para una experiencia
@@ -150,7 +150,7 @@ import {
           </div>
         </div>
 
-        <div class="glass-card project-card">
+        <div class="glass-card project-card delay-200">
           <h3 class="project-title">Ya Busco</h3>
           <p class="project-desc">
             Directorio comercial digital que conecta negocios locales en
@@ -168,7 +168,7 @@ import {
           </div>
         </div>
 
-        <div class="glass-card project-card">
+        <div class="glass-card project-card delay-300">
           <h3 class="project-title">Roraima AI SDK</h3>
           <p class="project-desc">
             SDK para integrar la primera IA venezolana, facilitando el uso de
@@ -768,8 +768,12 @@ import {
 
         cards.forEach((card) => {
           const htmlCard = card as HTMLElement;
-          htmlCard.style.setProperty("--tilt-x", `${tiltX}px`);
-          htmlCard.style.setProperty("--tilt-y", `${tiltY}px`);
+          // Clamp values to prevent overflow
+          const clampedX = Math.max(-20, Math.min(20, tiltX));
+          const clampedY = Math.max(-20, Math.min(20, tiltY));
+
+          htmlCard.style.setProperty("--tilt-x", `${clampedX}px`);
+          htmlCard.style.setProperty("--tilt-y", `${clampedY}px`);
         });
       },
       true,
